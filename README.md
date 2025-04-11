@@ -5,3 +5,4 @@ It is hosted via github and is available [here](https://casparbo.github.io)
 ## Todo
 - Switch to react
 - Content editable via json files without touching code
+- shorten cv so it fits on two pages
