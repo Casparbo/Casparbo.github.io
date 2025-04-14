@@ -1,0 +1,12 @@
+[
+	{
+		"title": "Shopping App",
+		"description": "I am developing this shopping app both as a means to learn Flutter and in order to organize my shopping.",
+		"url": "https://github.com/Casparbo/ShoppingApp"
+	},
+	{
+		"title": "This very website",
+		"description": "I created this very website. A small amount of components are rendered using React, for example this list of projects. This allows me to organize the contents of this page better. It is hosted via github.",
+		"url": "https://github.com/Casparbo/Casparbo.github.io"
+	}
+]
