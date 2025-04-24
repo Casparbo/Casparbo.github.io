@@ -1,4 +1,4 @@
-const root = ReactDOM.createRoot(document.getElementById('projects'));
+import { load } from "./js/react_content.js";
 
 function ProjectCard({name, description, url}) {
 	return (
@@ -11,8 +11,8 @@ function ProjectCard({name, description, url}) {
 	</div>);
 }
 
-function Projects({projectData}) {
-	const projects = projectData.map((project) => {
+function Projects({data}) {
+	const projects = data.map((project) => {
 		return <ProjectCard name={project["title"]} description={project["description"]} url={project["url"]} key={project["title"]}> </ProjectCard>
 	})
 
@@ -23,13 +23,4 @@ function Projects({projectData}) {
 		</>
 	)
 }
-
-function loadProjects() {
-	const projectCard = document.getElementById('project-card');
-
-	fetch('./content/projects.json')
-		.then((response) => response.json())
-		.then((data) => root.render(<Projects projectData={data}></Projects>))
-}
-
-loadProjects();
+load("projects", "./content/projects.json", Projects);
