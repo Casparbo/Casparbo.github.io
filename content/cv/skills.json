@@ -1,0 +1,22 @@
+{
+	"Languages":  [
+		"German (native)",
+		"English (fluent)"
+	],
+	"Programming Languages": [
+		"Python",
+		"VB.net/C#",
+		"Java",
+		"C",
+		"Html/CSS/JavaScript" 
+	],
+	"Tools": [
+		"Git",
+		"Regex",
+		"Azure DevOps",
+		"Jira",
+		"Confluence",
+		"Microsoft 365",
+		"SCRUM"  
+	]
+}

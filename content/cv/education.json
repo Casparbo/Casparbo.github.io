@@ -1,0 +1,24 @@
+[
+	{
+		"date": "Current",
+		"title": "Master of Science",
+		"institution": "Humboldt Universität zu Berlin",
+		"content": [
+			"Computer Science"
+		]
+	},
+	{
+		"date": "2022",
+		"title": "Bachelor of Science",
+		"institution": "HTW Berlin",
+		"content": [
+			"Applied Computer Science",
+			"Focus: Health Informatics"
+		]
+	},
+	{
+		"date": "2017",
+		"title": "Abitur/Higher education entry qualification",
+		"institution": "Katharinerum zu Lübeck"
+	}
+]

@@ -1,0 +1,65 @@
+[
+	{
+		"date": "12/2022 - 02/2024",
+		"title": "Automation Engineer",
+		"location": "Berlin, Germany",
+		"institution": "Deefinity Digital Consulting GmbH",
+		"content": [
+			"Agile project work according to SCRUM",
+			"Management of stakeholders and requirements for RPA-Processes",
+			"Development and maintanence of automation solutions using UIPath Studio and Orchestrator",
+			"Workshops and training for RPA developers"
+		],
+		"technologies": [
+			"VB.net & C#",
+			"UiPath Studio & Orchestrator",
+			"REST API",
+			"Regex Azure cognitive Services",
+			"Python"
+		],
+		"tools": [
+			"Git",
+			"Azure DevOps",
+			"Jira",
+			"Confluence",
+			"MS Office 365"
+		]
+	},
+	{
+		"date": "05/2022 - 09/2022",
+		"title": "Bachelor student Bioinformatics",
+		"location": "Berlin, Germany",
+		"institution": "LGC, Biosearch Technologies",
+		"content": [
+			"Thesis title: Development of a pipeline for parameter optimization in analyses of high-throughput-data"
+		],
+		"technologies": [
+			"Nextflow",
+			"Python"
+		],
+		"tools": [
+			"Git"
+		]
+	},
+	{
+		"date": "01/2022 - 04/2022",
+		"title": "Intern and working student software development",
+		"location": "Berlin, Germany",
+		"institution": "Think3DDD GbR",
+		"content": [
+			"Automation of a pipeline to generate a 3d-printable model for an orthosis based on video scans of a hand",
+			"Connecting APIs of photogrammetry software, CAD-software and 3d-editing software",
+			"Implementing an algorithm to determine 3d coordninates of joint positions based on 2d coordinates in images taken at multiple angles"
+		],
+		"technologies": [
+			"Python",
+			"Alicevision",
+			"FreeCAD",
+			"Blender",
+			"Mediapipe"
+		],
+		"tools": [
+			"Git"
+		]
+	}
+]

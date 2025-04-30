@@ -4,5 +4,5 @@ Some of the content is rendered from json files via react, allowing me to easily
 It is hosted via github and is available [here](https://casparbo.github.io)
 
 ## Todo
-- move cv content to json via react
-- shorten cv so it fits on two pages
+- more pretty projects -> horizontal scroll
+- project categories?
