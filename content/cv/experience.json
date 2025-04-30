@@ -50,7 +50,7 @@
 		"content": [
 			"Automation of a pipeline to generate a 3d-printable model for an orthosis based on video scans of a hand",
 			"Connecting APIs of photogrammetry software, CAD-software and 3D-editing software",
-			"Implementing an algorithm to determine 3D coordninates of joint positions based on 2D coordinates in images taken at multiple angles"
+			"Implementing an algorithm to determine 3D coordinates of joint positions based on 2D coordinates in images taken at multiple angles"
 		],
 		"technologies": [
 			"Python",
