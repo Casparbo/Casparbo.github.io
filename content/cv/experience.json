@@ -7,14 +7,15 @@
 		"content": [
 			"Agile project work according to SCRUM",
 			"Management of stakeholders and requirements for RPA-Processes",
-			"Development and maintanence of automation solutions using UIPath Studio and Orchestrator",
+			"Development and maintenance of automation solutions using UIPath Studio and Orchestrator",
 			"Workshops and training for RPA developers"
 		],
 		"technologies": [
 			"VB.net & C#",
 			"UiPath Studio & Orchestrator",
 			"REST API",
-			"Regex Azure cognitive Services",
+			"Regex",
+			"Azure Cognitive Services",
 			"Python"
 		],
 		"tools": [
@@ -27,11 +28,11 @@
 	},
 	{
 		"date": "05/2022 - 09/2022",
-		"title": "Bachelor student Bioinformatics",
+		"title": "Bachelor Student Bioinformatics",
 		"location": "Berlin, Germany",
 		"institution": "LGC, Biosearch Technologies",
 		"content": [
-			"Thesis title: Development of a pipeline for parameter optimization in analyses of high-throughput-data"
+			"Thesis title: Development of a Pipeline for Parameter Optimization in Analyses of High-Throughput-Data"
 		],
 		"technologies": [
 			"Nextflow",
@@ -43,13 +44,13 @@
 	},
 	{
 		"date": "01/2022 - 04/2022",
-		"title": "Intern and working student software development",
+		"title": "Intern and Working Student Software Development",
 		"location": "Berlin, Germany",
 		"institution": "Think3DDD GbR",
 		"content": [
 			"Automation of a pipeline to generate a 3d-printable model for an orthosis based on video scans of a hand",
-			"Connecting APIs of photogrammetry software, CAD-software and 3d-editing software",
-			"Implementing an algorithm to determine 3d coordninates of joint positions based on 2d coordinates in images taken at multiple angles"
+			"Connecting APIs of photogrammetry software, CAD-software and 3D-editing software",
+			"Implementing an algorithm to determine 3D coordninates of joint positions based on 2D coordinates in images taken at multiple angles"
 		],
 		"technologies": [
 			"Python",
