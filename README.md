@@ -4,6 +4,7 @@ The site is built using no js and only native HTML/CSS. This gives optimal perfo
 It is hosted via github and is available [here](https://casparbo.github.io)
 
 ## Todo
+- the site does not display correctly at all on mobile :(
 - figure out whether add all and how to automatically generate content based on data so i can reuse html elemtents
 - favicon is not displayed correctly in firefox
 - there needs to be an indication that the projects scroll sideways, it's not apparent
