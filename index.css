@@ -1,10 +1,17 @@
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
 .row {
   display: flex;
 }
 
 .column {
   margin: 0;
-  margin-inline: 20px;
   flex: 1 1 0px;
   flex-grow: 1;
   display: flex;
@@ -14,21 +21,39 @@
 
 .left {
   align-items: flex-start;
+  margin-right: 20px;
 }
 
 .center {
   align-items: center;
+  margin-inline: 20px;
 }
 
 .right {
   align-items: flex-end;
+  margin-right: 20px;
 }
 
 .nav {
   display: flex;
-  margin: 10px;
   margin-inline: 0;
   flex-wrap: wrap;
+}
+
+.nav a, .nav a:link {
+  border-right: 2px solid black;
+  padding-inline: 1em;
+  color: black;
+  text-decoration: None;
+}
+
+.nav a:nth-child(1) {
+  padding-left: 0;
+}
+
+.nav a:nth-child(4) {
+  border-right: 0;
+  padding-right: 0;
 }
 
 .large {
@@ -36,7 +61,7 @@
 }
 
 .content {
-  margin-inline: 20px;
+  margin-inline: 0px;
 }
 
 .carousel {
@@ -68,23 +93,25 @@
   height: 100%;
 }
 
-.nav a, .nav a:link {
-  border-right: 2px solid black;
-  padding-inline: 1em;
-  color: black;
-  text-decoration: None;
-}
-
 body {
   font-family: monospace;
 }
 
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 h1 {
   font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h3 {
