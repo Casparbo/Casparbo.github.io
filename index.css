@@ -85,7 +85,7 @@
 .scroll-jump {
   margin-inline: 1em;
   background-color: lightgrey;
-  border-radius: 33%;
+  border-radius: 12px;
   padding-inline: 1.5em;
   padding-top: 1em;
 }
