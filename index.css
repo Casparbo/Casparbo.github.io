@@ -69,12 +69,31 @@
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
+  scroll-behavior: smooth;
   margin-inline: 10px;
-  min-height: 33vh;
+  min-height: 25vh;
 }
 
 .carousel::-webkit-scrollbar {
   display: none;
+}
+
+.carousel-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.scroll-jump {
+  margin-inline: 1em;
+  background-color: lightgrey;
+  border-radius: 33%;
+  padding-inline: 1.5em;
+  padding-top: 1em;
+}
+
+.scroll-jump:active {
+  background-color: grey;
 }
 
 .project {
