@@ -17,21 +17,19 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-inline: 10px;
 }
 
 .left {
   align-items: flex-start;
-  margin-right: 20px;
 }
 
 .center {
   align-items: center;
-  margin-inline: 20px;
 }
 
 .right {
   align-items: flex-end;
-  margin-right: 20px;
 }
 
 .nav {
