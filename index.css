@@ -68,8 +68,6 @@
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  margin-inline: 10px;
-  min-height: 25vh;
 }
 
 .carousel::-webkit-scrollbar {
@@ -101,14 +99,16 @@
   scroll-margin-top: 120px;
 }
 
-.project img {
-  max-height: 33vh;
-  max-width: 100%;
+@media (max-width: 500px) {
+  .project {
+    flex-wrap: wrap;
+  }
 }
 
-.project.column {
-  width: 50%;
-  height: 100%;
+.project img {
+  display: flex;
+  height: 33vh;
+  margin-right: 20px;
 }
 
 body {
