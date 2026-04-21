@@ -1,7 +1,7 @@
 .sticky {
   position: sticky;
   top: 0;
-  background-color: white;
+  background-color: inherit;
   padding-bottom: 5px;
   padding-top: 5px;
 }
@@ -38,10 +38,10 @@
   flex-wrap: wrap;
 }
 
-.nav a, .nav a:link {
-  border-right: 2px solid black;
+.nav a, .nav a:link, .nav a:visited {
+  border-right: 2px solid;
   padding-inline: 1em;
-  color: black;
+  color: inherit;
   text-decoration: None;
 }
 
@@ -80,7 +80,7 @@
   margin-top: 10px;
 }
 
-.scroll-jump {
+.scroll-jump, .scroll-jump:visited {
   background-color: lightgrey;
   border-radius: 12px;
   padding-inline: 1em;
@@ -113,6 +113,27 @@
 
 body {
   font-family: monospace;
+  background-color: white;
+    color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(24 25 25);
+    color: rgb(231 230 230);
+  }
+
+  .logo {
+    filter: invert(100%);
+  }
+
+  a {
+    color: lightblue;
+  }
+
+  a:visited {
+    color: green;
+  }
 }
 
 p {
