@@ -34,7 +34,7 @@
 
 .nav {
   display: flex;
-  margin-inline: 0;
+  margin-inline: 10px;
   flex-wrap: wrap;
 }
 
@@ -59,7 +59,7 @@
 }
 
 .content {
-  margin-inline: 0px;
+  margin-inline: 10px;
 }
 
 .carousel {
@@ -94,13 +94,14 @@
 
 .project {
   flex-shrink: 0;
-  scroll-snap-align: center;
-  width: 100%;
+  scroll-snap-align: start;
+  width: 50%;
   scroll-margin-top: 120px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 700px) {
   .project {
+    width: 100%;
     flex-wrap: wrap;
   }
 }
@@ -114,14 +115,15 @@
 body {
   font-family: monospace;
   background-color: white;
-    color: black;
+  color: black;
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: rgb(24 25 25);
-    color: rgb(231 230 230);
+    background-color: black;
+    color: white;
   }
+
 
   .logo {
     filter: invert(100%);
@@ -159,9 +161,10 @@ h3 {
 }
 
 img {
-  border-radius: 12px;
+  border-radius: 5px;
 }
 
 #headshot {
-  border-radius: 25%;
+  border: 1px solid;
+  border-color: gray;
 }
