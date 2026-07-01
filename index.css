@@ -4,6 +4,7 @@
   background-color: inherit;
   padding-bottom: 5px;
   padding-top: 5px;
+  z-index: 10;
 }
 
 .row {
@@ -108,7 +109,8 @@
 
 .project img {
   display: flex;
-  height: 33vh;
+  max-width: 100%;
+  max-height: 33vh;
   margin-right: 20px;
 }
 
