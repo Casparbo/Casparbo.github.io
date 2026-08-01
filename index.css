@@ -1,7 +1,13 @@
+:root {
+  --highlight-color: rgb(235, 240, 240);
+  --background-color: rgb(255, 255, 255);
+  --foreground-color: rgb(0, 0, 0);
+}
+
 .sticky {
   position: sticky;
   top: 0;
-  background-color: rgb(235, 235, 235);
+  background-color: var(--highlight-color);
   padding-bottom: 5px;
   padding-top: 5px;
   margin-bottom: 10px;
@@ -84,15 +90,15 @@
 }
 
 .scroll-jump, .scroll-jump:visited {
-  background-color: grey;
+  background-color: var(--highlight-color);
   border-radius: 12px;
   padding-inline: 1em;
-  color: black;
+  color: var(--foreground-color);
   text-decoration: none;
 }
 
 .scroll-jump:active {
-  background-color: grey;
+  background-color: var(--highlight-color);
 }
 
 .project {
@@ -107,7 +113,7 @@
   width: 100%;
   margin-inline: 5px;
   border-radius: 5px;
-  background-color: rgb(235, 235, 235);
+  background-color: var(--highlight-color);
 }
 
 .project .description {
@@ -131,23 +137,29 @@
 
 body {
   font-family: monospace;
-  background-color: white;
-  color: black;
+  background-color: var(--background-color);
+  color: var(--foreground-color);
   margin: 0;
 }
 
 @media (prefers-color-scheme: dark) {
+  :root {
+    --highlight-color: rgb(15, 20, 20);
+    --background-color: rgb(0, 0, 0);
+    --foreground-color: rgb(255, 255, 255);
+  }
+
   .sticky{
-    background-color: rgb(20, 20, 20);
+    background-color: var(--highlight-color);
   }
 
   body {
-    background-color: black;
-    color: white;
+    background-color: var(--background-color);
+    color: var(--foreground-color);
   }
 
   .projectcontent {
-    background-color: rgb(20, 20, 20);
+    background-color: var(--highlight-color);
   }
 
   .logo {
@@ -187,9 +199,4 @@ h3 {
 
 img {
   border-radius: 5px;
-}
-
-#headshot {
-  border: 1px solid;
-  border-color: gray;
 }
