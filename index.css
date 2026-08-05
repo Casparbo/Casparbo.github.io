@@ -90,14 +90,16 @@
 
 .scroll-jump, .scroll-jump:visited {
   background-color: var(--highlight-color);
+  border: 2px solid var(--highlight-color);
   border-radius: 12px;
-  padding-inline: 1em;
+  padding-inline: 5px;
+  margin-top: -3px;
   color: var(--foreground-color);
   text-decoration: none;
 }
 
-.scroll-jump:active {
-  background-color: var(--highlight-color);
+.scroll-jump:active, .scroll-jump:hover {
+  background-color: var(--background-color);
 }
 
 .project {
@@ -143,7 +145,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --highlight-color: rgb(15, 20, 20);
+    --highlight-color: rgb(48, 50, 50);
     --background-color: rgb(0, 0, 0);
     --foreground-color: rgb(255, 255, 255);
   }
