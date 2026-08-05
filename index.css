@@ -137,7 +137,8 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: "DejaVu Sans Mono";
+  font-size: 12px;
   background-color: var(--background-color);
   color: var(--foreground-color);
   margin: 0;
