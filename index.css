@@ -2,6 +2,7 @@
   --highlight-color: rgb(230, 235, 235);
   --background-color: rgb(255, 255, 255);
   --foreground-color: rgb(0, 0, 0);
+  --fontsize: 20px;
 }
 
 .sticky {
@@ -51,7 +52,7 @@
 .nav a, .nav a:link, .nav a:visited {
   margin-inline: 5px;
   padding: 3px;
-  border: 2px solid var(--background-color);
+  border: 5px solid var(--background-color);
   border-radius: 5px;
   color: inherit;
   text-decoration: None;
@@ -63,11 +64,18 @@
 }
 
 .large {
-  font-size: 15px;
+  font-size: calc(1.2*var(--fontsize));
+}
+
+#logo {
+  height: calc(4.8*var(--fontsize));
 }
 
 .content {
-  margin-inline: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .carousel {
@@ -76,6 +84,7 @@
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 .carousel::-webkit-scrollbar {
@@ -100,7 +109,7 @@
   line-height: 19px;
   vertical-align: middle;
   background-color: var(--highlight-color);
-  border: 2px solid var(--highlight-color);
+  border: 3px solid var(--highlight-color);
   border-radius: 12px;
   padding-inline: 10px;
   color: var(--foreground-color);
@@ -116,33 +125,44 @@
   display: flex;
   scroll-snap-align: start;
   width: 50%;
+  height: 33vh;
   scroll-margin-top: 120px;
 }
 
 .projectcontent {
   width: 100%;
-  margin-inline: 5px;
-  border-radius: 5px;
   background-color: var(--highlight-color);
 }
 
 .project .description {
-  margin: 10px;
+  padding: 10px;
+  width: 100%;
 }
 
-@media (max-width: 1094px) {
+.project img {
+  object-fit: contain;
+  max-height: 100%;
+}
+
+@media (max-width: 1400px) {
   .project {
     width: 100%;
+    
+  }
+}
+
+@media (max-width: 700px) {
+  .project {
+    height: auto;
+    img {
+      max-width: 100%;
+      max-height: 33vh;
+    }
   }
   .projectcontent {
     flex-wrap: wrap;
   }
-}
 
-.project img {
-  display: flex;
-  max-width: 100%;
-  max-height: 25vh;
 }
 
 @font-face {
@@ -152,7 +172,7 @@
 
 body {
   font-family: mspace;
-  font-size: 12px;
+  font-size: var(--fontsize);
   background-color: var(--background-color);
   color: var(--foreground-color);
   margin: 0;
@@ -184,22 +204,18 @@ p {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: calc(3*var(--fontsize));
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 22px;
+  font-size: calc(2*var(--fontsize));
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: calc(1.5*var(--fontsize));
   margin: 0;
-}
-
-img {
-  border-radius: 5px;
 }
