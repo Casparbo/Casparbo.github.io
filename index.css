@@ -2,17 +2,17 @@
   --highlight-color: rgb(230, 235, 235);
   --background-color: rgb(255, 255, 255);
   --foreground-color: rgb(0, 0, 0);
-  --fontsize: 20px;
+  --fontsize: 15px;
 }
 
 .sticky {
   position: sticky;
   top: 0;
   background-color: var(--highlight-color);
-  padding-bottom: 5px;
-  padding-top: 5px;
   margin-bottom: 10px;
+  margin-top: 5px;
   z-index: 10;
+  border: bottom solid 5px var(--foreground-color);
 }
 
 .row {
@@ -68,14 +68,7 @@
 }
 
 #logo {
-  height: calc(4.8*var(--fontsize));
-}
-
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  height: calc(4*var(--fontsize));
 }
 
 .carousel {
@@ -125,18 +118,21 @@
   display: flex;
   scroll-snap-align: start;
   width: 50%;
-  height: 33vh;
-  scroll-margin-top: 120px;
+  height: 25vh;
 }
 
 .projectcontent {
   width: 100%;
-  background-color: var(--highlight-color);
 }
 
 .project .description {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
   width: 100%;
+  justify-content: center;
+  text-align: left;
+
 }
 
 .project img {
@@ -170,12 +166,29 @@
   src: url(content/DejaVu_Sans_Mono/DejaVuSansMono.ttf);
 }
 
+html {
+  scroll-snap-type: y mandatory;
+}
+
 body {
   font-family: mspace;
   font-size: var(--fontsize);
   background-color: var(--background-color);
   color: var(--foreground-color);
   margin: 0;
+
+  .content:nth-of-type(2n-1) {
+    background-color: var(--highlight-color);
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  scroll-snap-align: start;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -204,18 +217,18 @@ p {
 }
 
 h1 {
-  font-size: calc(3*var(--fontsize));
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-h2 {
   font-size: calc(2*var(--fontsize));
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-h3 {
+h2 {
   font-size: calc(1.5*var(--fontsize));
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: calc(1.2*var(--fontsize));
   margin: 0;
 }
